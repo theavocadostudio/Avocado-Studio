@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avocado Studio</title>
+<link rel="icon" type="image/svg+xml" href="public/Frame 36.svg">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: white;
+  background-image: url('public/Rectangle 6.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* CENTER CONTENT */
+.center {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* EXACT ICON STYLE */
+.icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 18px;
+  opacity: 0.9;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.icon svg {
+  width: 100%;
+  stroke: white;
+  stroke-width: 1.6;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* TEXT */
+.text {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  opacity: 0.95;
+}
+
+/* BOTTOM CONTACT */
+.bottom {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.bottom div {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ICONS (outline style like screenshot) */
+.bottom svg,
+.bottom img {
+  width: 20px;
+  height: 20px;
+  stroke: white;
+  stroke-width: 1.5;
+  fill: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .text {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+
+  .bottom {
+    font-size: 12px;
+    bottom: 20px;
+  }
+
+  .icon {
+    width: 20px;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- CENTER -->
+<div class="center">
+
+  <!-- 🌱 Plant icon (from public/plant.svg) -->
+  <div class="icon">
+    <img src="public/plant.svg" alt="Plant icon" />
+  </div>
+
+  <div class="text">
+    The avocado is still growing. We’ll be ready soon.
+  </div>
+
+</div>
+
+<!-- BOTTOM -->
+<div class="bottom">
+
+  <div>
+    <!-- WhatsApp icon (from public/whatsapp.svg) -->
+    <img src="public/whatsapp.svg" alt="WhatsApp icon" />
+    +91 7010462902
+  </div>
+
+  <div>
+    <!-- Mail icon (from public/mail.svg) -->
+    <img src="public/mail.svg" alt="Mail icon" />
+    reachout@avocadostudio.design
+  </div>
+
+</div>
+
+</body>
+</html>
