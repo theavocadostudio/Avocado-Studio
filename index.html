@@ -63,8 +63,9 @@ body {
   opacity: 0.95;
 }
 
-.text br {
-  display: none;
+.text-first,
+.text-second {
+  display: inline;
 }
 
 /* BOTTOM CONTACT */
@@ -102,8 +103,14 @@ body {
     padding: 0 20px;
   }
 
-  .text br {
+  .text-first {
     display: block;
+    white-space: nowrap;
+  }
+
+  .text-second {
+    display: block;
+    margin-top: 4px;
   }
 
   .bottom {
@@ -136,7 +143,8 @@ body {
   </div>
 
   <div class="text">
-    The avocado is still growing.<br>We’ll be ready soon.
+    <span class="text-first">The avocado is still growing.</span>
+    <span class="text-second">We’ll be ready soon.</span>
   </div>
 
 </div>
